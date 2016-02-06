@@ -9,12 +9,15 @@ http.createServer(function(req, res){
 console.log('Webserver has started!');
 */
 
-var http = require('http');									 //http module
-var fs = require('fs'); 									 //File system module
+//http module
+var http = require('http');
+//File system module
+var fs = require('fs');
 http.createServer(function(req, res){
 	fs.readFile('index.html', function(error, data){
 		res.writeHead(200,{'Content-type':'text/html'});
 		res.end(data); 
 	});
-}).listen(1337,'127.0.0.1'); 								 //Listening for port 1337 and IP is for the localhost
+//Listening for port 1337 and setting up localhost IP
+}).listen(1337,'127.0.0.1');
 console.log('Webserver has started!');
