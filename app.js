@@ -25,6 +25,7 @@ app.set('views', __dirname+'/views');
 app.set('view engine', 'jade');
 console.log("Jade has been initialized");
 console.log("Testing some git crap");
+console.log("Testing Git branching.");
 
 // Stylus Middleware (functions that handle requests - error handling, loggin, etc.)
 app.use(morgan('dev'));
